@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIN THE WHEEL</title>
+    <link href="spinthewheel.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <h1 style="font-size:40px;">ANG SWERTING MABUNATAN!!</h1>
+    <h3 style="font-size:25px;">Maoy Birahan</h3>
+
+
+    <div id="mainbox" class="mainbox">
+        <div id="box" class="box">
+            <div class="box1">
+                <span class="span1"><b> ARNEL</b></span>
+                <span class="span2"><b> MARVIN</b></span>
+                <span class="span3"><b> REME</b></span>
+                <span class="span4"><b> RONILLO</b></span>
+            </div>
+            <div class="box2">
+                <span class="span1"><b> ARNEL</b></span>
+                <span class="span2"><b> MARVIN</b></span>
+                <span class="span3"><b> REME</b></span>
+                <span class="span4"><b >RONILLO</b></span>
+            </div>
+        </div>
+
+
+
+        <button class="spin" onclick="rotateFunction()">SPIN</button>
+
+        <img src="/pngfind.com-arrow-pointing-right-png-2395967.png">
+    </div>
+
+    </div>
+
+
+    <script>
+        function rotateFunction() {
+            var min = 1024;
+            var max = 9999;
+            var deg = Math.floor(Math.random() * (max - min)) + min;
+            document.getElementById('box').style.transform = "rotate(" + deg + "deg)";
+        }
+
+        setTimeout(function() {
+            element.classList.add('animate');
+        }, 5000);
+    </script>
+</body>
+
+</html>
